@@ -8,6 +8,6 @@ puts "----------"
 #1. Load the third store (into `@store3`) as you did the other two before.
 #2. Using Active Record's `destroy` method, delete the store from the database.
 #3. Verify that the store has been deleted by again outputting (`puts`ing) the `count` (as you did in Exercise 1.)
-store3 = Store.find_by(id: 3)
-store3.destroy
+@store3 = Store.find_by(id: 3)
+@store3.destroy
 puts "There are #{Store.count} store(s) in the table"
